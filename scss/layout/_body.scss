@@ -5,6 +5,7 @@ PROFILE
 #top-profile,
 #skill {
 	background-color: $gray-var;
+	margin: #{$default-margin};
 }
 .profile-img {
 	width: 70%;
@@ -63,12 +64,12 @@ PORTFOLIO
 	  padding-right: 1em;
 	}
 	@media #{$break-wide} {
-		  display: inline-block;
-		  width: 30%;
-		  margin-right: -4px;
-		  vertical-align: top;
-		  padding-left: 1em;
-		  padding-right: 1em;
+		display: inline-block;
+		width: 30%;
+		margin-right: -4px;
+		vertical-align: top;
+		padding-left: 1em;
+		padding-right: 1em;
 	}
 }
 /*
@@ -76,6 +77,7 @@ SKILLS
 */
 #skills {
 	line-height: 1.5em;
+	background-color: #{$gray-var};
 	& li {
 		@media #{$break-narrow}  {
 		display: inline-block;

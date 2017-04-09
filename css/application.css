@@ -22,11 +22,11 @@ h2 {
   @media screen and (min-width: 768px) {
     .page-section {
       width: 100%;
-      margin: "0 auto;"; } }
+      margin: 0 auto;; } }
   @media screen and (min-width: 1024px) {
     .page-section {
       width: 90%;
-      margin: "0 auto;"; } }
+      margin: 0 auto;; } }
 
 a:link {
   text-decoration: none; }
@@ -75,7 +75,8 @@ PROFILE
 */
 #top-profile,
 #skill {
-  background-color: #a8a8a8; }
+  background-color: #a8a8a8;
+  margin: 0 auto;; }
 
 .profile-img {
   width: 70%;
@@ -142,7 +143,8 @@ PORTFOLIO
 SKILLS
 */
 #skills {
-  line-height: 1.5em; }
+  line-height: 1.5em;
+  background-color: #a8a8a8; }
   @media screen and (min-width: 768px) {
     #skills li {
       display: inline-block;
