@@ -1,0 +1,19 @@
+/*
+HEADER
+*/
+.main-header {
+	width: 100%;
+	font-weight: 700;
+	display: block;
+	@extend %center;
+	@media #{$break-wide} {
+		padding: 20px 80px 0 80px;
+		& .student-name {
+			float: left;
+		}
+		& .main-nav {
+			float: right;
+			margin-top: 32px
+		}
+	}
+}

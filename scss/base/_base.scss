@@ -1,0 +1,60 @@
+/*
+Base Element Styles
+*/
+* {
+	box-sizing: border-box;
+    font-family: "Oxygen Mono", serif;
+}
+
+body {
+	@extend %center;
+	padding: 0;
+	margin: 0;
+}
+
+h1 {
+	@extend %default-body-text;
+	font-weight: 700;
+}
+h2 {
+	padding-bottom: 20px;
+	@extend %default-body-text;
+}
+h3 {
+	@extend %default-body-text;
+}
+p {
+	@extend %default-body-text;
+}
+
+.page-section {
+	padding-top: 30px;
+	padding-bottom: 20px;
+    width: 100%;
+	@media #{$break-narrow} {
+		width: 100%;
+		margin: $default-margin
+	}
+	@media #{$break-wide} {
+		width: 90%;
+		margin: $default-margin
+	}
+}
+
+a:link {
+	text-decoration: none;
+	@extend %default-body-text;
+}
+a:visited {
+	color: $gray-var;
+}
+a:hover {
+	@extend %default-body-text;
+    opacity: .4;
+}
+
+.clearfix::after {
+    content: "";
+	display: table;
+    clear: both;
+}

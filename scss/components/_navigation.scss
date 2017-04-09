@@ -1,0 +1,56 @@
+/*
+Nav Styling
+*/
+.main-nav {
+	list-style: none;
+	padding: 0;
+    & li {
+        @media #{$break-narrow} {
+            display: inline-block;
+            margin-left: 12px;
+            padding-bottom: 20px;
+        }
+        & a {
+        line-height: 1.5em;
+        }
+    }
+}
+.nav {
+    & {
+        @extend %center;
+        justify-content: space-around;
+        font-weight: 700;
+        list-style-type: none;
+        margin: #{$default-margin};
+        padding: 0;
+    }
+    & .name {
+        display: block;
+        margin-right: auto;
+    }
+    & li {
+    padding: 5px 10px 10px 10px;
+    }
+}
+.footer .main-nav {
+	display: none;
+}
+.bot-nav {
+    display: none;
+    @media #{$break-narrow} {
+        display: inline;
+    }
+    & a {
+        @media #{$break-narrow} {
+        float: right;
+        display: inline;
+        padding-right: 10px;
+        padding-top: 10px;
+        }
+    }
+}
+#top {
+    @media #{$break-narrow} {
+        display: none;
+    }
+}

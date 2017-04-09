@@ -1,0 +1,22 @@
+// Default body Text Styling
+%default-body-text {
+    font-weight: 400;
+	color: $black-var;
+}
+
+// Center Text
+%center {
+    text-align: center;
+}
+
+// Footer Text
+%footer-text {
+    font-size: 1em;
+    margin-right: 1em;
+    padding-bottom: 10px;
+}
+
+// Text Colors
+%header-color {
+    color: $black-var;
+}

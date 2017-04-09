@@ -1,0 +1,23 @@
+/*
+FOOTER
+*/
+.footer-border {
+	border-top: .25px solid $black-var;
+	width: 90%;
+	margin: auto;
+	padding-bottom: 10px;
+}
+.footer {
+	margin-top: 8px;
+    background-color:	$gray-var;
+}
+.footer-student-name {
+	text-align: left;
+	float: left;
+	@extend %footer-text;
+}
+#top {
+	text-align: right;
+	float: right;
+	@extend %footer-text;
+}

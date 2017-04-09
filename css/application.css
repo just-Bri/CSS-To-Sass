@@ -1,0 +1,234 @@
+/*
+Base Element Styles
+*/
+* {
+  box-sizing: border-box;
+  font-family: "Oxygen Mono", serif; }
+
+body {
+  padding: 0;
+  margin: 0; }
+
+h1 {
+  font-weight: 700; }
+
+h2 {
+  padding-bottom: 20px; }
+
+.page-section {
+  padding-top: 30px;
+  padding-bottom: 20px;
+  width: 100%; }
+  @media screen and (min-width: 768px) {
+    .page-section {
+      width: 100%;
+      margin: "auto 0;"; } }
+  @media screen and (min-width: 1024px) {
+    .page-section {
+      width: 90%;
+      margin: "auto 0;"; } }
+
+a:link {
+  text-decoration: none; }
+
+a:visited {
+  color: #a8a8a8; }
+
+a:hover {
+  opacity: .4; }
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both; }
+
+h1, h2, h3, p, a:link, a:hover {
+  font-weight: 400;
+  color: black; }
+
+body, .main-header, .profile-bio, .nav {
+  text-align: center; }
+
+.footer-student-name, #top {
+  font-size: 1em;
+  margin-right: 1em;
+  padding-bottom: 10px; }
+
+/*
+HEADER
+*/
+.main-header {
+  width: 100%;
+  font-weight: 700;
+  display: block; }
+  @media screen and (min-width: 1024px) {
+    .main-header {
+      padding: 20px 80px 0 80px; }
+      .main-header .student-name {
+        float: left; }
+      .main-header .main-nav {
+        float: right;
+        margin-top: 32px; } }
+
+/*
+PROFILE
+*/
+#top-profile,
+#skill {
+  background-color: #a8a8a8; }
+
+.profile-img {
+  width: 70%;
+  margin: auto 0;; }
+  @media screen and (min-width: 768px) {
+    .profile-img {
+      width: 35%;
+      float: right;
+      padding-right: 30px;
+      padding-bottom: 10px; } }
+  @media screen and (min-width: 1024px) {
+    .profile-img {
+      width: 30%;
+      float: right;
+      margin-right: 2em;
+      padding-bottom: 10px; } }
+
+.profile-bio {
+  width: 90%;
+  margin: 10px auto 20px auto; }
+  @media screen and (min-width: 768px) {
+    .profile-bio {
+      text-align: left;
+      float: left;
+      margin-left: 2em;
+      padding-bottom: 10px;
+      width: 50%;
+      font-size: 1.1em; } }
+
+@media screen and (min-width: 768px) {
+  .student-name {
+    text-align: center;
+    margin-top: 20px;
+    padding-bottom: 20px; } }
+
+/*
+PORTFOLIO
+*/
+.portfolio-div {
+  width: 90%;
+  margin: auto 0;;
+  padding-bottom: 20px; }
+  .portfolio-div img {
+    margin-bottom: 10px;
+    width: 100%; }
+  @media screen and (min-width: 768px) {
+    .portfolio-div {
+      display: inline-block;
+      width: 48%;
+      margin-right: -4px;
+      vertical-align: top;
+      padding-left: 1em;
+      padding-right: 1em; } }
+  @media screen and (min-width: 1024px) {
+    .portfolio-div {
+      display: inline-block;
+      width: 30%;
+      margin-right: -4px;
+      vertical-align: top;
+      padding-left: 1em;
+      padding-right: 1em; } }
+
+.portfolio-div
+#skills {
+  line-height: 1.5em; }
+  @media screen and (min-width: 768px) {
+    .portfolio-div
+    #skills li {
+      display: inline-block;
+      margin-right: 20px;
+      padding-bottom: 10px; } }
+
+.skill-list {
+  padding: 0px; }
+
+/*
+CONTACT
+*/
+@media screen and (min-width: 768px) {
+  .contact p {
+    width: 80%; } }
+
+.contact-item a {
+  font-weight: 700; }
+
+#contact {
+  display: block;
+  padding: 10px; }
+
+/*
+FOOTER
+*/
+.footer-border {
+  border-top: 0.25px solid black;
+  width: 90%;
+  margin: auto;
+  padding-bottom: 10px; }
+
+.footer {
+  margin-top: 8px;
+  background-color: #a8a8a8; }
+
+.footer-student-name {
+  text-align: left;
+  float: left; }
+
+#top {
+  text-align: right;
+  float: right; }
+
+/*
+Nav Styling
+*/
+.main-nav {
+  list-style: none;
+  padding: 0; }
+  @media screen and (min-width: 768px) {
+    .main-nav li {
+      display: inline-block;
+      margin-left: 12px;
+      padding-bottom: 20px; } }
+  .main-nav li a {
+    line-height: 1.5em; }
+
+.nav {
+  justify-content: space-around;
+  font-weight: 700;
+  list-style-type: none;
+  margin: auto 0;;
+  padding: 0; }
+.nav .name {
+  display: block;
+  margin-right: auto; }
+.nav li {
+  padding: 5px 10px 10px 10px; }
+
+.footer .main-nav {
+  display: none; }
+
+.bot-nav {
+  display: none; }
+  @media screen and (min-width: 768px) {
+    .bot-nav {
+      display: inline; } }
+  @media screen and (min-width: 768px) {
+    .bot-nav a {
+      float: right;
+      display: inline;
+      padding-right: 10px;
+      padding-top: 10px; } }
+
+@media screen and (min-width: 768px) {
+  #top {
+    display: none; } }
+
+/*# sourceMappingURL=application.css.map */

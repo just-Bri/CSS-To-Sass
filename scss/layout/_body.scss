@@ -1,0 +1,108 @@
+/*
+PROFILE
+*/
+
+#top-profile,
+#skill {
+	background-color: $gray-var;
+}
+.profile-img {
+	width: 70%;
+	margin: #{$default-margin};
+	@media #{$break-narrow} {
+		width: 35%;
+		float: right;
+		padding-right: 30px;
+		padding-bottom: 10px;
+	}
+	@media #{$break-wide} {
+		width: 30%;
+		float: right;
+		margin-right: 2em;
+		padding-bottom: 10px;
+	}
+}
+.profile-bio {
+	width: 90%;
+	@extend %center;
+	margin: 10px auto 20px auto;
+	@media #{$break-narrow} {
+		text-align: left;
+		float: left;
+		margin-left: 2em;
+		padding-bottom: 10px;
+		width: 50%;
+		font-size: 1.1em;
+	}
+}
+.student-name {
+	@media #{$break-narrow} {
+		text-align: center;
+		margin-top: 20px;
+		padding-bottom: 20px;
+	}
+};
+
+/*
+PORTFOLIO
+*/
+.portfolio-div {
+	width: 90%;
+	margin: #{$default-margin};
+	padding-bottom: 20px;
+	& img {
+		margin-bottom: 10px;
+		width: 100%;
+	}
+	@media #{$break-narrow} {
+	  display: inline-block;
+	  width: 48%;
+	  margin-right: -4px;
+	  vertical-align: top;
+	  padding-left: 1em;
+	  padding-right: 1em;
+	}
+	@media #{$break-wide} {
+		  display: inline-block;
+		  width: 30%;
+		  margin-right: -4px;
+		  vertical-align: top;
+		  padding-left: 1em;
+		  padding-right: 1em;
+	}
+}
+.portfolio-div 
+
+/*
+SKILLS
+*/
+#skills {
+	line-height: 1.5em;
+	& li {
+		@media #{$break-narrow}  {
+		display: inline-block;
+		margin-right: 20px;
+		padding-bottom: 10px;
+		}
+	}
+}
+.skill-list {
+	padding: 0px;
+}
+
+/*
+CONTACT
+*/
+
+.contact p {
+	@media #{$break-narrow} {
+		width: 80%;
+	}
+}
+.contact-item a {
+	font-weight: 700;
+}
+#contact {
+	display: block;
+	padding: 10px;
+}
