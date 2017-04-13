@@ -13,18 +13,18 @@ body {
 }
 
 h1 {
-	@extend %default-body-text;
+	@include default-text;
 	font-weight: 700;
 }
 h2 {
 	padding-bottom: 20px;
-	@extend %default-body-text;
+	@include default-text;
 }
 h3 {
-	@extend %default-body-text;
+	@include default-text;
 }
 p {
-	@extend %default-body-text;
+	@include default-text;
 }
 
 .page-section {
@@ -43,13 +43,13 @@ p {
 
 a:link {
 	text-decoration: none;
-	@extend %default-body-text;
+	@include default-text;
 }
 a:visited {
 	color: $gray-var;
 }
 a:hover {
-	@extend %default-body-text;
+	@include default-text;
     opacity: .4;
 }
 

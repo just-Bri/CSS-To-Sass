@@ -7,4 +7,11 @@ $break-narrow: 'screen and (min-width: 768px)';
 $break-wide: 'screen and (min-width: 1024px)';
 
 // Default Margin
-$default-margin: '0 auto;' // I used this instead of an extend because I wanted to use the variable inside my media queries. Which it turns out you can't @extend inside media queries.
+$default-margin: '0 auto;'; // I used this instead of an extend because I wanted to use the variable inside my media queries. Which it turns out you can't @extend inside media queries.
+
+
+// Text Default
+@mixin text-default {
+    font-weight: 400;
+	color: $black-var;
+};
