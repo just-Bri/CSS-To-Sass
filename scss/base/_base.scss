@@ -12,19 +12,17 @@ body {
 	margin: 0;
 }
 
+h1,
+h2,
+h3,
+p {
+	@include default-text(16px, normal, $black-var);
+}
 h1 {
-	@include default-text;
 	font-weight: 700;
 }
 h2 {
 	padding-bottom: 20px;
-	@include default-text;
-}
-h3 {
-	@include default-text;
-}
-p {
-	@include default-text;
 }
 
 .page-section {
@@ -43,13 +41,13 @@ p {
 
 a:link {
 	text-decoration: none;
-	@include default-text;
+	@include default-text(16px, normal, $black-var);
 }
 a:visited {
 	color: $gray-var;
 }
 a:hover {
-	@include default-text;
+	@include default-text(16px, normal, $black-var);
     opacity: .4;
 }
 
